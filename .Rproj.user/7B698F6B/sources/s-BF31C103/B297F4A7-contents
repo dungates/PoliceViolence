@@ -63,8 +63,7 @@ ggsave(here::here("Images/map_violence.png"), height = 10, width = 18)
 
 An example table as well:
 
-<div style="text-align:center">
-```{r pressure, echo = FALSE}
+```{r pressure, echo = FALSE, eval = F}
 police_race %>%
   group_by(race) %>%
   summarise(n = sum(n)) %>%
@@ -89,8 +88,12 @@ police_race %>%
   gt::tab_header(title = "Percent of Murders per Race") %>%
   gt::fmt_percent(columns = percent,
               scale_values = F, 
-              decimals = 2)
+              decimals = 2) %>%
+  gt::gtsave(here::here("Images/table.png"))
 ```
+
+<div style="text-align:center">
+![](Images/table.png)
 </div>
 
 In that case, don't forget to commit and push the resulting figure files, so they display on GitHub.
