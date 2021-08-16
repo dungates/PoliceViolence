@@ -27,7 +27,7 @@ ggplot(police_race, aes(fct_reorder(factor(race), percent), percent, fill = fact
         axis.text.y = element_text(size = 8),
         panel.spacing = unit(0.1, "lines"),
         strip.text = element_text(face = "bold", family = "Fira Sans", hjust = 0.5, size = 14))
-ggsave(here::here("Images/map_violence.png"), height = 10, width = 18)
+ggsave(here::here("Images/map_violence.png"), height = 10, width = 18, bg = "white")
 ```
 
 ![](Images/map_violence.png)
