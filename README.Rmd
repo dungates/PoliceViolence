@@ -30,7 +30,7 @@ A change that will only appear because of github actions.
 
 An example visualization below:
 
-```{r police, echo = F}
+```{r police, echo = F, eval = F}
 police <- readxl::read_excel("./raw.xlsx")
 police_race <- police %>%
   count(`Victim's race`, State) %>%
