@@ -26,6 +26,8 @@ library(gt)
 
 The goal of the American Policing Project is to demonstrate the inefficacy and infefficiency of the American policing system.
 
+A change that will only appear because of github actions.
+
 An example visualization below:
 
 ```{r police, echo = F}
