@@ -12,11 +12,11 @@ knitr::opts_chunk$set(
   message = F,
   comment = "#>"
 )
-library(tidyverse)
-library(readxl)
-library(DGThemes)
-library(geofacet)
-library(gt)
+# library(tidyverse)
+# library(readxl)
+# library(DGThemes)
+# library(geofacet)
+# library(gt)
 ```
 
 # American Policing
@@ -97,5 +97,3 @@ police_race %>%
 <div style="text-align:center">
 ![](Images/table.png)
 </div>
-
-In that case, don't forget to commit and push the resulting figure files, so they display on GitHub.
